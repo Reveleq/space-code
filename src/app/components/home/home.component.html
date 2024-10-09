@@ -1,0 +1,27 @@
+<section
+  class="home"
+  style="background-image: url('assets/home/background-home-desktop.jpg')"
+>
+  <div class="container home__box d-flex">
+    <div class="home__text">
+      <h1 class="home__text-title text-light">
+        So, you want to travel to
+        <span class="home__text-title-span my-3">Space</span>
+      </h1>
+      <p class="home__text-paragraph text-light px-5">
+        Let’s face it; if you want to go to space, you might as well genuinely
+        go to outer space and not hover kind of on the edge of it. Well sit
+        back, and relax because we’ll give you a truly out of this world
+        experience!
+      </p>
+    </div>
+
+    <button
+      class="home__btn"
+      [routerLink]="['/destination']"
+      routerLinkActive="router-link-active"
+    >
+      Explore
+    </button>
+  </div>
+</section>

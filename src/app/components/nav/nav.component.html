@@ -1,0 +1,92 @@
+<div class="container">
+  <nav class="desktop-nav">
+    <div class="desktop-nav__logo">
+      <img
+        class="desktop-nav__logo-icon"
+        src="assets/shared/logo.svg"
+        alt="logo"
+      />
+    </div>
+    <div class="desktop-nav__line-box">
+      <div class="desktop-nav__line"></div>
+    </div>
+    <div class="desktop-nav__links">
+      <a class="desktop-nav__link" routerLink="/">
+        <span class="desktop-nav__link-span">01</span>Home</a
+      >
+      <a
+        class="desktop-nav__link"
+        routerLink="/destination"
+        routerLinkActive="desktop-nav__link-active"
+      >
+        <span class="desktop-nav__link-span">02</span>Destination</a
+      >
+
+      <a
+        routerLink="/crew"
+        class="desktop-nav__link"
+        routerLinkActive="desktop-nav__link-active"
+      >
+        <span class="desktop-nav__link-span">03</span>Crew</a
+      >
+
+      <a
+        routerLink="/technology"
+        class="desktop-nav__link"
+        routerLinkActive="desktop-nav__link-active"
+      >
+        <span class="desktop-nav__link-span">04</span>Technology</a
+      >
+    </div>
+  </nav>
+</div>
+<nav class="mobile-nav">
+  @if ( !activeMobileNav ) {
+  <button class="mobile-nav__btn" (click)="activeNav()">
+    <img
+      src="assets/shared/icon-hamburger.svg"
+      alt="przycisk otwierający mobilną nawigację"
+      class="mobile-nav__btn-img"
+    />
+  </button>
+
+  } @if ( activeMobileNav ) {
+  <button class="mobile-nav__btn" (click)="hideNav()">
+    <img
+      src="assets/shared/icon-close.svg"
+      alt="przycisk zamykający mobilną navigację"
+      class="mobile-nav__close-btn-img"
+    />
+  </button>
+  }
+
+  <div class="mobile-nav__links" [ngClass]="slide">
+    <a routerLink="/" class="mobile-nav__link" (click)="hideNav()"
+      ><span class="mobile-nav__link-span">01 </span>Home</a
+    >
+    <a
+      routerLinkActive="mobile-nav__link-active"
+      routerLink="/destination/66fbabf8e0a43f699263f2b3"
+      class="mobile-nav__link"
+      (click)="hideNav()"
+    >
+      <span class="mobile-nav__link-span">02 </span>Destination</a
+    >
+    <a
+      routerLinkActive="mobile-nav__link-active"
+      routerLink="/crew"
+      class="mobile-nav__link"
+      (click)="hideNav()"
+    >
+      <span class="mobile-nav__link-span">03 </span>Crew</a
+    >
+    <a
+      routerLinkActive="mobile-nav__link-active"
+      routerLink="/technology"
+      class="mobile-nav__link"
+      (click)="hideNav()"
+    >
+      <span class="mobile-nav__link-span">04 </span>Technology</a
+    >
+  </div>
+</nav>

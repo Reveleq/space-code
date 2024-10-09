@@ -1,0 +1,31 @@
+.wrapper {
+  position: relative;
+}
+.scroll-up {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  height: 6rem;
+  width: 6rem;
+  opacity: 1;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s;
+  z-index: 20;
+  &:hover {
+    transform: scale(0.95);
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+  }
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+  }
+}

@@ -1,0 +1,70 @@
+<section
+  class="crew"
+  style="background-image: url('https://reveleq.github.io/space/assets/crew/background-crew-desktop.jpg')"
+>
+  <div class="container d-flex">
+    <h2 class="crew__text-title text-light">
+      <span class="crew__text-title-number">02</span> meet your crew
+    </h2>
+  </div>
+  <div class="container crew__box d-flex">
+    <div class="crew__text">
+      <div class="crew__up">
+        <img class="crew__up-img" src="https://reveleq.github.io/space/{{ crew.images.png }}" alt="planet" />
+      </div>
+      <div class="crew__down">
+        <div class="crew__down-nav">
+          <button
+            routerLink="/crew/66fbac36e0a43f699263f2b8"
+            routerLinkActive="crew__down-nav-link-active"
+            class="crew__down-nav-link"
+          ></button>
+          <button
+            routerLink="/crew/66fbac36e0a43f699263f2b9"
+            href="/crew/66fbac36e0a43f699263f2b9"
+            routerLinkActive="crew__down-nav-link-active"
+            class="crew__down-nav-link"
+          ></button>
+          <button
+            routerLink="/crew/66fbac36e0a43f699263f2ba"
+            routerLinkActive="crew__down-nav-link-active"
+            class="crew__down-nav-link"
+          ></button>
+          <a
+            [routerLink]="['/crew/66fbac36e0a43f699263f2bb']"
+            routerLinkActive="crew__down-nav-link-active"
+            class="crew__down-nav-link"
+          ></a>
+        </div>
+        <h3 class="crew__down-title-second">{{ crew.role }}</h3>
+        <h1 class="crew__down-title">{{ crew.name }}</h1>
+        <p class="crew__down-text text-light">
+          {{ crew.bio }}
+        </p>
+        <div class="crew__down-nav second-nav">
+          <button
+            routerLink="/crew/66fbac36e0a43f699263f2b8"
+            routerLinkActive="crew__down-nav-link-active"
+            class="crew__down-nav-link"
+          ></button>
+          <button
+            routerLink="/crew/66fbac36e0a43f699263f2b9"
+            href="/crew/66fbac36e0a43f699263f2b9"
+            routerLinkActive="crew__down-nav-link-active"
+            class="crew__down-nav-link"
+          ></button>
+          <button
+            routerLink="/crew/66fbac36e0a43f699263f2ba"
+            routerLinkActive="crew__down-nav-link-active"
+            class="crew__down-nav-link"
+          ></button>
+          <button
+            [routerLink]="['/crew/66fbac36e0a43f699263f2bb']"
+            routerLinkActive="crew__down-nav-link-active"
+            class="crew__down-nav-link"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,70 @@
+<section
+  class="destination"
+  style="
+    background-image: url('https://reveleq.github.io/space/assets/destination/background-destination-desktop.jpg');
+  "
+>
+  <div class="container d-flex">
+    <h2 class="destination__text-title text-light">
+      <span class="destination__text-title-number">01</span> Pick your
+      destination
+    </h2>
+  </div>
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="destination__text">
+      <div class="destination__up">
+        <img
+          class="destination__up-img"
+          src="https://reveleq.github.io/space/{{ planet.images.png }}"
+          alt="planet"
+        />
+      </div>
+      <div class="destination__down">
+        <div class="destination__down-nav">
+          <a
+            routerLink="/destination/66fbabf8e0a43f699263f2b3"
+            routerLinkActive="destination__down-nav-link-active"
+            class="destination__down-nav-link"
+            >Moon</a
+          >
+          <a
+            routerLink="/destination/66fbabf8e0a43f699263f2b4"
+            routerLinkActive="destination__down-nav-link-active"
+            class="destination__down-nav-link"
+            >Mars</a
+          >
+          <a
+            routerLink="/destination/66fbabf8e0a43f699263f2b5"
+            routerLinkActive="destination__down-nav-link-active"
+            class="destination__down-nav-link"
+            >Europa</a
+          >
+          <a
+            routerLink="/destination/66fbabf8e0a43f699263f2b6"
+            routerLinkActive="destination__down-nav-link-active"
+            class="destination__down-nav-link"
+            >Titan</a
+          >
+        </div>
+        <h1 class="destination__down-title">{{ planet.name }}</h1>
+        <p class="destination__down-text text-light">
+          {{ planet.description }}
+        </p>
+        <div class="destination__down-details">
+          <p class="destination__down-details-title">
+            avg. distance
+            <span class="destination__down-details-text">
+              {{ planet.distance }}</span
+            >
+          </p>
+          <p class="destination__down-details-title">
+            est. travel time
+            <span class="destination__down-details-text">
+              {{ planet.travel }}</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,102 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -8rem;
+  padding-top: 8rem;
+  margin-bottom: -8rem;
+  min-height: calc(100vh + 3rem);
+  background-size: cover;
+  background-position: center;
+  // background-image: url("/assets/home/background-home-mobile.jpg");
+  &__box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text {
+    margin-top: 5rem;
+    max-width: 35rem;
+    &-title {
+      margin-top: 4rem;
+      font-size: 2.5rem;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      text-transform: uppercase;
+      &-span {
+        padding: 0 2rem;
+        font-size: 8rem;
+        font-family: "Bellefair", serif;
+      }
+    }
+    &-paragraph {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  }
+  &__btn {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-family: "Bellefair", serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 6rem 3.5rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: color 0.3s, background-color 0.3s;
+    cursor: pointer;
+    &:hover {
+      color: #fff;
+      background: none;
+    }
+    &:focus {
+      outline: none;
+      color: #fff;
+      background: none;
+    }
+  }
+}
+@media (width > 768px) {
+  .home {
+    margin-top: -11rem;
+    // background-image: url("/assets/home/background-home-tablet.jpg");
+    &__text {
+      max-width: 45rem;
+      &-title {
+        font-size: 3.5rem;
+        &-span {
+          font-size: 10rem;
+        }
+      }
+      &-paragraph {
+        font-size: 2rem;
+      }
+    }
+    &__btn {
+      padding: 6rem 3rem;
+      font-size: 2.5rem;
+    }
+  }
+}
+@media (width > 992px) {
+  .home {
+    &__text {
+      &-title {
+        margin-top: 0;
+      }
+    }
+    &__box {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-end;
+    }
+    &__btn {
+      margin: 0;
+      padding: 7rem 3rem;
+      font-size: 3rem;
+    }
+
+  }
+}

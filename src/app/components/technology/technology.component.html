@@ -1,0 +1,63 @@
+<section
+  class="technology"
+  style="
+    background-image: url('https://reveleq.github.io/space/assets/technology/background-technology-desktop.jpg');
+  "
+>
+  <div class="container d-flex">
+    <h2 class="technology__text-title text-light">
+      <span class="technology__text-title-number">03</span> space launch 101
+    </h2>
+  </div>
+  <div class="container technology__box d-flex">
+    <div class="technology__text">
+      <div class="technology__up">
+        <img
+          class="technology__up-img mobile-img"
+          src="https://reveleq.github.io/space/{{
+            technology.images.landscape
+          }}"
+          alt="technology img"
+        />
+        <img
+          class="technology__up-img desktop-img"
+          src="https://reveleq.github.io/space/{{ technology.images.portrait }}"
+          alt="technology img"
+        />
+      </div>
+
+      <div class="technology__down">
+        <div class="technology__down-nav">
+          <button
+            routerLink="/technology/66fbac59e0a43f699263f2be"
+            routerLinkActive="technology__down-nav-link-active"
+            class="technology__down-nav-link"
+          >
+            1
+          </button>
+          <button
+            routerLink="/technology/66fbac59e0a43f699263f2bd"
+            routerLinkActive="technology__down-nav-link-active"
+            class="technology__down-nav-link"
+          >
+            2
+          </button>
+          <button
+            routerLink="/technology/66fbac59e0a43f699263f2bf"
+            routerLinkActive="technology__down-nav-link-active"
+            class="technology__down-nav-link"
+          >
+            3
+          </button>
+        </div>
+        <div class="technology__down-box">
+          <h3 class="technology__down-title-second">the terminology</h3>
+          <h1 class="technology__down-title">{{ technology.name }}</h1>
+          <p class="technology__down-text text-light">
+            {{ technology.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
